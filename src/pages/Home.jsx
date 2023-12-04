@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import Layout from "../components/Layout";
 import img from "../assets/abed.png";
+import Social from "../components/Social";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
               alt="abed"
             />
           </div>
+          <Social />
           <div>
             <h1 className="text-lg md:text-6xl font-medium text-slate-600 mb-2">
               Hi! I'm Abed <br /> Front end developer
