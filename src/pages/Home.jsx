@@ -18,8 +18,8 @@ export default function Home() {
           </div>
           <Social />
           <div>
-            <h1 className="text-lg md:text-6xl font-medium text-slate-600 mb-2">
-              Hi! I'm Abed <br /> Front end developer
+            <h1 className="text-lg mt-4 md:text-6xl font-medium text-slate-600 mb-2">
+              Hi! I'm Abed <br /> Front end web developer
             </h1>
             <p className="text-slate-500 text-lg mb-4">
               I build and develope front-end of a website.
