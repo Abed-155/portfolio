@@ -1,5 +1,8 @@
 import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { AiOutlineClose } from "react-icons/ai";
+import { useState } from "react";
 
 const navItems = [
   {
@@ -30,6 +33,7 @@ const navItems = [
 ];
 
 export default function Layout({ children }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
       <div className="h-full">
@@ -62,21 +66,11 @@ export default function Layout({ children }) {
                 ))}
               </ul>
             </div>
-            <div className="md:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 text-white cursor-pointer text-lg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
+            <div
+              className="md:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <RxHamburgerMenu className="text-white text-2xl cursor-pointer" />
             </div>
           </nav>
         </header>
