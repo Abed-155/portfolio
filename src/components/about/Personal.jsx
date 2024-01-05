@@ -44,7 +44,7 @@ export default function Personal() {
         <p className="text-justify text-slate-500 mt-2">
           I am a self-taught front-end web developer. I build and develope front
           end of a website. I have a lot of confident to learn something new. I
-          am a React specialist. If you want to hire me please, contact me with
+          am a React specialist. If you want to hire me please, contact me via
           email.
         </p>
       </div>

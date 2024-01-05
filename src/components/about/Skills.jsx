@@ -25,6 +25,12 @@ const skills = [
     progress: "80%",
     bg: "w-4/5 bg-cyan-500",
   },
+  {
+    id: "115",
+    title: "Tailwind",
+    progress: "80%",
+    bg: "w-4/5 bg-cyan-500",
+  },
 ];
 
 export default function Skills() {
