@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import { FaBars } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 
-export default function Nav({ navItems, onIsOpen }) {
+export default function MobileNav({ navItems, onClose }) {
   return (
     <nav className="w-11/12 m-auto flex justify-between items-center">
       <div>
@@ -10,8 +10,8 @@ export default function Nav({ navItems, onIsOpen }) {
           ABED
         </Link>
       </div>
-      <div className="hidden md:block">
-        <ul className="flex gap-4">
+      <div className="md:hidden mt-9 fixed top-4 left-0 w-full h-full bg-slate-900 ">
+        <ul className="flex gap-4 flex-col justify-center items-center pt-4 border-t border-slate-400">
           {navItems.map((item) => (
             <li key={item.id}>
               <NavLink
@@ -29,8 +29,8 @@ export default function Nav({ navItems, onIsOpen }) {
         </ul>
       </div>
       <div className="md:hidden">
-        <button onClick={onIsOpen}>
-          <FaBars className="text-white text-xl cursor-pointer" />
+        <button onClick={onClose}>
+          <FaTimes className="text-white text-xl cursor-pointer" />
         </button>
       </div>
     </nav>
